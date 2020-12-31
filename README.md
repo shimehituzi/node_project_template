@@ -1,4 +1,4 @@
-1. `git iniy`
+1. `git init`
 1. `nvim .gitignore`
 1. `yarn init -y`
 1. `package.json` の `"main"` を `"index.ts"` にする
