@@ -1,26 +1,30 @@
 {
   "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-    "prettier/@typescript-eslint"
+    "standard",
+    "plugin:prettier/recommended"
   ],
   "plugins": [
     "@typescript-eslint"
   ],
-  "env": { "node": true, "es6": true },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "sourceType": "module",
-    "project": "./tsconfig.json"
+      "sourceType": "module"
   },
   "rules": {
-    "semi": ["error", "never", {"beforeStatementContinuationChars": "never"}],
-    "semi-spacing": ["error", {"after": true, "before": false}],
-    "semi-style": ["error", "first"],
-    "no-extra-semi": "error",
-    "no-unexpected-multiline": "error",
-    "no-unreachable": "error"
+    "@typescript-eslint/adjacent-overload-signatures": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "semi": false
+      }
+    ],
+    "yoda": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "no-dupe-class-members": "off"
+  },
+  "globals": {
+    "fetch": false
   }
 }
