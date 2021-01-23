@@ -1,5 +1,5 @@
 1. `git init`
-1. `nvim .gitignore`
+1. `echo "/node_modules\n/dist" > .gitignore`
 1. `yarn init -y`
 1. `package.json` の `"main"` を `"index.ts"` にする
 1. `yarn add typescript @types/node`
