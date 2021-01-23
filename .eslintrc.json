@@ -4,7 +4,7 @@
     "plugin:prettier/recommended"
   ],
   "plugins": [
-    "@typescript-eslint"
+      "@typescript-eslint"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -21,7 +21,12 @@
     ],
     "yoda": "off",
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
     "no-dupe-class-members": "off"
   },
   "globals": {
