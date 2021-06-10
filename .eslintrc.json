@@ -8,7 +8,7 @@
   "rules": {
     "@typescript-eslint/adjacent-overload-signatures": "error",
     "prettier/prettier": [
-      "error",
+      "warn",
       {
         "singleQuote": true,
         "semi": false
